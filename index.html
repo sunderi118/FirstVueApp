@@ -6,20 +6,12 @@
 <body>
 
 <div id="app">
-    <ol>
-        <li v-for="todo in todos">
-            {{ todo.text }}
-        </li>
-    </ol>
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage"> Reverse message</button>
 
-    <ol>
-        <li v-for="todo in todos">
-            {{ todo.text }}
-        </li>
-    </ol>
 </div>
 
-</body>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/main.js"></script>
 </body>

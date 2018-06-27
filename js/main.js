@@ -1,27 +1,14 @@
-// (function () {
-//     'use strict';
-//
-//     var vm = new Vue({
-//         el:"#app",
-//         data: {
-//             todos:[
-//                 'task1',
-//                 'task2',
-//                 'task3'
-//             ]
-//         }
-//     });
-// })();
-var app = new Vue({
+//v-on
+
+
+var app= new Vue({
     el: '#app',
     data: {
-        todos:[
-            {text:'sjsjs'},
-            {text:'sss9si'},
-            {text:'uiuiusl'}
-
-        ]
+        message: "hello Vue.js!"
+    },
+    methods:{
+        reverseMessage:function(){
+            this.message = this.message.split('').reverse().join('')
+        }
     }
 })
-
-app.todos.push({text:'hello'});
