@@ -4,7 +4,7 @@
 var app= new Vue({
     el: '#app',
     data: {
-        message: "hello Vue.js!"
+        // message: "hello Vue.js!"
     },
     methods:{
         reverseMessage:function(){
