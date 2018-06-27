@@ -15,8 +15,13 @@
 var app = new Vue({
     el: '#app',
     data: {
-        seen:true
+        todos:[
+            {text:'sjsjs'},
+            {text:'sss9si'},
+            {text:'uiuiusl'}
+
+        ]
     }
 })
 
-app.seen=false;
+app.todos.push({text:'hello'});
